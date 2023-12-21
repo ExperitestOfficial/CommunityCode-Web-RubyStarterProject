@@ -5,8 +5,8 @@ require 'selenium-webdriver'
 class DemoWebChromeTest < Test::Unit::TestCase
   def setup
     options = Selenium::WebDriver::Options.chrome # Use a different options class to run on a different browser
-    options.add_option("experitest:testName", 'Demo Bank Chrome')
-    options.add_option("experitest:accessKey", TestUtils.get_access_key)
+    options.add_option("digitalai:testName", 'Demo Bank Chrome')
+    options.add_option("digitalai:accessKey", TestUtils.get_access_key)
 
     @driver = Selenium::WebDriver.for(:remote, :url => TestUtils.get_url, capabilities: options)
   end

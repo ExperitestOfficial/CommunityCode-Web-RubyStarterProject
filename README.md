@@ -10,7 +10,7 @@ Use this project to get started writing tests with Continuous Testing Cloud usin
     ```
 2. Set up authentication. Update the following parameters in [config.yml](config.yml):
 * url - URL for the cloud the test runs on. For example, https://company.experitest.com/
-* accessKey -  Personal authentication key. To learn how to obtain a key, see [Obtaining Access Key](https://docs.experitest.com/pages/viewpage.action?pageId=52593435).
+* accessKey -  Personal authentication key. To learn how to obtain a key, see [Obtaining Access Key](https://docs.digital.ai/bundle/TE/page/obtaining_access_key.html).
 
 ## Running Tests
 This project requires Ruby 3.0 or higher.
@@ -19,8 +19,7 @@ If this is the first time running the tests, set up the dependencies.
 ```bash
 gem install selenium-webdriver -v 4.10.0
 ```
-To run all tests in this project, execute to following command line:
-
+To run all tests in this project, run this on the command line
 ```bash
 ruby -Itest test/run_tests.rb
 ```
@@ -33,10 +32,10 @@ options = Selenium::WebDriver::Options.chrome
 ```
 
 Continuous Cloud Testing expands Selenium's capabilities and allows better control over the device and test.
-See [Capabilities in Selenium Tests](https://docs.experitest.com/display/TE/Capabilities+In+Selenium+Tests) to learn how to customize the desired capabilities for your tests.
+See [Capabilities in Selenium Tests](https://docs.digital.ai/bundle/TE/page/capabilities_in_selenium_tests.html) to learn how to customize the desired capabilities for your tests.
 
 ## Documentation
-To find out more about Continuous Cloud Testing usage, features, and best practices, visit our online [documentation](https://docs.experitest.com/display/TE/Test+Execution+Home)
+To find out more about Continuous Cloud Testing usage, features, and best practices, visit our online [documentation](https://docs.digital.ai/bundle/TE/page/test_execution_home.html)
 
 ## Support
 If you encounter an issue that is not covered here or in our online documentation, contact us at [support@digital.ai](mailto:support@digital.ai).
